@@ -1,0 +1,86 @@
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/apps/link-checker/src/link-checker/css/link-checker.css
+ #  Provides all Bootstrap base styles for the LINK Checker App
+ #
+ #   Product/Info:
+ #   https://jekyll.one
+ #
+ #   Copyright (C) 2017 Juergen Adams
+ #
+ #   J1 Template is licensed under the MIT License.
+ #   For details, see https://jekyll.one
+ #
+ # -----------------------------------------------------------------------------
+ */
+ 
+ #spatial {
+  height: 600px;
+  overflow: hidden;
+  /*background: #000;*/
+}
+#sitemap textarea {
+    height: 600px;
+    width: 100%;
+}
+
+/* jadams: Added new styles */
+.nav {
+  padding-left: 0;
+  margin-bottom: 50px;
+  list-style: none;
+}
+
+.btn-toolbar {
+  padding-left: 0;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+/* jadams 2016-10-17: width: 95% --> 100% */
+.link-checker {
+  width: 100%;
+}
+
+.tooltip-inner {
+  color: #fff;
+  background-color: #3465a4;
+  border-top-color: #3465a4;
+}
+
+/* jadams 2016-10-17: Added new styles */
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  margin-right: -140px;
+  margin-left: -15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+

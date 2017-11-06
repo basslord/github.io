@@ -1,0 +1,91 @@
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/framework/mdc_web/css/j1_template/j1-mdc-web.css
+ #  Provides customized styles for the J1 MDC Components
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #
+ # -----------------------------------------------------------------------------
+*/
+
+
+ /* MDC Customization
+ ------------------------------------------------------------------ */
+
+.mdc-menu-button {
+  background: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+  box-sizing: border-box;
+}
+
+.mdc-list {
+    padding-left: 5px !important;
+}
+
+.mdc-toolbar__title {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.mdc-temporary-drawer__header-content {
+ font-size: 2rem;
+ line-height: 2rem;
+}
+
+.mdc-toolbar__title {
+  font-size: 2rem;
+  padding-left: .5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 600px) {
+  .mdc-temporary-drawer__drawer {
+    width: calc(100% - 64px);
+    max-width: 400px;
+  }
+}
+
+ /* BS Customization
+ ------------------------------------------------------------------ */
+
+/* jadams, 2017-09-16 - TODO: Move to BS ressources or create   */
+/*                            additional classes for the drawer */
+
+.input-group-btn .btn {
+  padding: 8px 10px;
+}
+
+.form-group {
+  padding-bottom: 5px;
+  margin-bottom: 5px !important;
+  margin: 10px 0px 0px 0px;
+}
+
+.form-horizontal .form-group {
+  margin-right: 0 !important;
+}
+
+.form-group .checkbox label, .form-group .radio label, .form-group label {
+  font-size: 12px;
+  padding-top: 10px;
+  line-height: 1.8;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.form-control {
+  font-size: 12px;
+}
+
+

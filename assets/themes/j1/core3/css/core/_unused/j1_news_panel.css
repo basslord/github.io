@@ -1,0 +1,55 @@
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/core3/css/panels/j1_news_panel.css
+ #  Provides styles for the J1 News Panel
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #
+ # -----------------------------------------------------------------------------
+*/
+
+/* Card styles (to be moved to cards.css
+ ------------------------------------------------------------------ */
+
+.card-news {
+    text-align: center;
+}
+
+/* Content
+ ------------------------------------------------------------------ */
+
+.news-panel {
+  padding: 20px 0 20px;
+  border-bottom: solid 1px #eee;
+  background: linear-gradient(0deg, #a9afd6 0%, #ece9e9 100%);
+}
+
+.news-panel p {
+  text-align: justify;
+}
+
+.news-panel .card-description {
+  text-align: -webkit-center;
+}
+
+/* Media Queries
+ ------------------------------------------------------------------ */
+
+@media (max-width: 768px) {
+	.news-panel {
+		margin: 5rem;
+	}
+}
+
+@media (max-width: 640px) {
+	.news-panel {
+		margin: 5rem;
+	}
+}
+

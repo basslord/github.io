@@ -1,0 +1,220 @@
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/core3/css/core/j1_footer.css
+ #  Provides styles for footers used by J1 Template
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #
+ # -----------------------------------------------------------------------------
+*/
+
+/* jadams: background md_grey_900 */
+.footer-light-theme .footer {
+	padding: 70px 0;
+	background: #212121;
+}
+
+.footer-light-theme .footer p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+/*Heading Footer*/
+.footer-light-theme .heading-footer {
+	text-align: left;
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 2px;
+}
+
+.footer-light-theme .heading-footer:after {
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    content: " ";
+    background: #204a87;
+    position: absolute;
+}
+
+.footer-light-theme .heading-footer h2 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.3em !important;
+    text-transform: uppercase;
+}
+
+/*Link News*/
+.footer-light-theme .footer .link-news {
+	margin-bottom: 0;
+}
+
+.footer-light-theme .footer .link-news li {
+	padding: 12px 0px;
+	border-top: solid 1px #353535;
+}
+
+.footer-light-theme .footer .link-news li:first-child {
+	padding-top: 0;
+	border-top: none;
+}
+
+.footer-light-theme .footer .link-news li a {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 1em;
+	margin-bottom: 3px;
+	display: inline-block;
+}
+
+.footer-light-theme .footer .link-news a:hover {
+	color: #FAFAFA !important;
+  text-decoration: none;
+}
+
+.footer-light-theme .footer .link-news li small {
+	color: #555;
+	display: block;
+}
+
+/*Link List*/
+.footer-light-theme .footer-link-list li {
+	padding: 9px 0px;
+	border-top: solid 1px #333;
+}
+
+.footer-light-theme .footer-link-list li:first-child {
+	padding-top: 0;
+	border-top: none;
+}
+
+.footer-light-theme .footer-link-list li a {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 1em;
+	display: inline-block;
+  font-family: sans-serif;
+}
+
+.footer-light-theme .footer-link-list a:hover {
+	color: #FAFAFA !important;
+  text-decoration: none;
+}
+
+/*Contacts*/
+.footer-light-theme .footer .contacts {
+	margin-bottom: 0;
+}
+
+.footer-light-theme .footer .contacts li {
+	margin-bottom: 20px;
+}
+
+.footer-light-theme .footer .contacts li:before,
+.footer-light-theme .footer .contacts li:after {
+  	content: " ";
+	display: table;
+}
+
+.footer-light-theme .footer .contacts li:after {
+	clear: both;
+}
+
+.footer-light-theme .footer .contacts li i {
+	float: left;
+	width: 30px;
+  height: 30px;
+	color: rgba(255, 255, 255, 0.5);
+	padding: 8px 5px;
+	background: #333;
+	text-align: center;
+	margin: 4px 10px 0 0;
+	display: inline-block;
+}
+
+.footer-light-theme .footer .contacts li p {
+	margin-bottom: 0;
+}
+
+.footer-light-theme .footer .contacts li a {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-light-theme .footer .contacts li a:hover {
+	color: #FAFAFA !important;
+  text-decoration: none;
+}
+
+/*Footer Copyright*/
+
+/* Enable horizontal list */
+#inline ul li { 
+  display: inline;
+}
+
+/* jadams: md_grey_800 */
+.footer-light-theme .copyright {
+	padding: 15px 0;
+	background: #424242;
+  font-family: sans-serif;
+}
+
+.footer-light-theme .copyright p {
+  font-size: 0.8em;
+  font-family: sans-serif;
+  margin-top: 3px;
+}
+
+/*Social Icons*/
+.footer-light-theme .dark-social {
+  margin: 5px 0 0;
+}
+
+.footer-light-theme .dark-social li {
+  margin-left: 5px;
+}
+
+.footer-light-theme .dark-social li i {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*Terms Menu*/
+.footer-light-theme .copyright .terms-menu {
+	margin: 7px 0 0;
+}
+
+.footer-light-theme .copyright .terms-menu li {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8em;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.footer-light-theme .copyright .terms-menu li:first-child {
+	border-left: none;
+	padding: 0 7px 0 0;
+}
+
+.footer-light-theme .copyright .terms-menu li a {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-light-theme .copyright .terms-menu li a:before {
+  content: " · ";
+}
+.footer-light-theme .copyright .terms-menu li a:hover {
+	color: #FAFAFA !important;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+	.footer-light-theme .copyright .terms-menu,
+	.footer-light-theme .copyright .dark-social.pull-right {
+		text-align: center;
+		float: none !important;
+	}
+}

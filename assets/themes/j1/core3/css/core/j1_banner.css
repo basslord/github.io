@@ -1,0 +1,36 @@
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/core3/css/core/j1_banner.css
+ #  Provides all general panel styles for J1 Template
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #
+ # -----------------------------------------------------------------------------
+*/
+
+
+/* Content
+ ------------------------------------------------------------------ */
+
+.j1-banner-block.container,
+.j1-banner-block.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/*
+.j1-banner-block.row {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+*/
+
+.box .content {
+  padding: 15px 30px;
+}

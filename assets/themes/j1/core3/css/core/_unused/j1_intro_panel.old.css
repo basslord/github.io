@@ -1,0 +1,181 @@
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/core3/css/panels/j1_intro_panel.css
+ #  Provides styles for the J1 Intro Panel
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #
+ # -----------------------------------------------------------------------------
+ #  CSS file generated: {{site.time}}
+ # -----------------------------------------------------------------------------
+*/
+
+/*
+ ---------------------------------------------------------------------
+    Inspired by UNIFY
+    TODO: Check for used styles, remove all unused
+ ---------------------------------------------------------------------
+*/
+
+/*
+ # -----------------------------------------------------------------------------
+	  Intro Panel
+ # -----------------------------------------------------------------------------
+*/
+
+/*
+ # -------------------------------------------------------------------
+	  Media Queries
+ # -------------------------------------------------------------------
+*/
+
+@media (max-width: 768px) {
+	.intro-panel {
+		margin: 3rem;
+	}
+}
+
+@media (max-width: 640px) {
+	.intro-panel {
+		margin: 3rem;
+	}
+}
+
+
+/*
+ ---------------------------------------
+    Service link block
+ ---------------------------------------
+*/
+
+ul.service-list > li > a {
+  display: block;
+  width: 100%;
+  border-bottom: dotted 1px #e0e0e0;
+  padding: 10px 30px 5px 30px;
+  color: #9E9E9E;
+  font-weight: 600;
+}
+
+ul.service-list > li > a:focus, 
+ul.service-list > li > a:hover {
+  color: #3F51B5  !important;
+  text-decoration: none !important;
+}
+
+/*
+ ---------------------------------------
+    Intro Block
+ ---------------------------------------
+*/
+
+.intro-block {
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 15px 15px 20px;
+}
+
+.intro-block:hover {
+  background: #fcfcfc;
+  box-shadow: 0 0 5px #ddd;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.intro-block:hover  {
+  color: #656565;
+}
+
+/* jadams 2016-08-28: change padding: 0 15px*/
+.intro-block .desc {
+    padding: 0 5px;
+    overflow: hidden;
+}
+.intro-block .desc h4 {
+    font-size: 22px;
+    line-height: 25px;
+}
+
+.intro-block .intro-icon {
+  float: left;
+  padding: 10px;
+  color: #3465a4;
+  font-size: 35px;
+  text-align: center;
+}
+
+/*
+ ---------------------------------------
+    Intro Box default|light
+ ---------------------------------------
+*/
+
+.intro-box {
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 15px 15px 20px;
+  margin-bottom: 30px;
+}
+
+.intro-box-light,
+.intro-box-default {
+  background: #f3f4fd;
+  border: solid 1px #eee;
+}
+
+.intro-box-light,
+.intro-box-default:hover {
+  box-shadow: 0 0 8px #E5E5E5;
+}
+
+/*
+ ---------------------------------------
+    Intro Box light-2
+ ---------------------------------------
+*/
+
+.intro-box-light-2 {
+  background: rgba(255,255,255,0.2);
+}
+
+/*
+ ---------------------------------------
+	 Intro Box light-3
+ ---------------------------------------
+*/
+.intro-box-light-3 {
+  position: relative;
+  background: #ecf0f1;
+}
+
+.intro-box-light-3:after {
+  top: 0;
+  width: 0;
+  height: 0;
+  left: 50%;
+  content: '';
+  margin-left: -20px;
+  position: absolute;
+  border-style: solid;
+  border-width: 25px 20px 0 20px;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*
+ ---------------------------------------
+    Intro Box dark
+ ---------------------------------------
+*/
+
+.intro-box-dark {
+  background: #ecf0f1 !important;
+  border: solid 1px #b8b7d1;
+}
+
+.intro-box-dark:hover {
+  box-shadow: 0 0 8px #2E3436;
+}

@@ -1,0 +1,226 @@
+
+
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/modules/bmd4/css/j1_template/j1_md_custom.css
+ #  Provides all custom styles for the J1 MD
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #
+ # -----------------------------------------------------------------------------
+ #  CSS file generated: 2017-11-06 21:16:02 +0100
+ # -----------------------------------------------------------------------------
+*/
+/* Liquid procedures
+ ----------------------------------------------------------------------- */
+/* Colors
+ ----------------------------------------------------------------------- */
+.bg-indigo {
+  color: #fff !important;
+  background-color: #3F51B5 !important; }
+a.bg-indigo:focus, a.bg-indigo:hover {
+  background-color: #E8EAF6 !important; }
+.bg-pink {
+  color: #fff !important;
+  background-color: #E91E63 !important; }
+a.bg-pink:focus, a.bg-pink:hover {
+  background-color: #FCE4EC !important; }
+/* General
+ ----------------------------------------------------------------------- */
+/* jadams, 2017-05-25: added elevation class bmd-elevation-z1 */
+pre {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 10.5px;
+    margin: 0 0 11px;
+    font-size: 90%;
+    color: rgba(0, 0, 0, 0.87);
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #E8EAF6;
+    border: 1px solid #9E9E9E;
+    border-radius: 2px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); }
+}
+/* jadams, 2017-05-27: added to bootstrap-material-design.css */
+.raised, .block-raised, .img-raised {
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+/* jadams, 2017-05-25: added headline styles (h1 not used for asciidoc) */
+h1 {
+    margin-top: 0rem;
+    margin-bottom: .75rem;
+}
+h2, h3 {
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+h4, h5, h6 {
+    margin-top: 1.25rem;
+    margin-bottom: .5rem;
+}
+p {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+a:focus, a:hover {
+  color: #E91E63;
+  text-decoration: none;
+}
+/* Cards
+ ----------------------------------------------------------------------- */
+.card-icon-theme {
+    background: #01579B !important;
+}
+/* Modals
+ ----------------------------------------------------------------------- */
+/* jadams: Fixing the BS left shifting on modal open */
+/* See: https://stackoverflow.com/questions/19960162/bootstrap-3-modal-fires-and-causes-page-to-shift-to-the-left-momentarily-brows */
+.modal-open[style] {
+padding-right: 0px !important;
+}
+/* Forms
+ ----------------------------------------------------------------------- */
+.bmd-form-group {
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: .75em;
+}
+/* jadams: left space for ripples */
+.bmd-form-content {
+  padding-left: .75rem;
+}
+/* jadams: darken label|help text for better reading */
+[class^='bmd-label'], [class*=' bmd-label'] {
+  color: rgba(0, 0, 0, 0.6);
+}
+.bmd-help {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.radio label,
+.is-focused .radio label,
+.radio-inline,
+.is-focused .radio-inline,
+.checkbox label,
+.is-focused .checkbox label,
+.checkbox-inline, .is-focused .checkbox-inline,
+.switch label, .is-focused .switch label {
+    color: rgba(0, 0, 0, 0.6);
+}
+.radio label:focus,
+.radio label:active,
+.radio label:hover,
+.is-focused .radio label:focus,
+.is-focused .radio label:active,
+.is-focused .radio label:hover,
+.radio-inline:focus,
+.radio-inline:active,
+.radio-inline:hover,
+.is-focused .radio-inline:focus,
+.is-focused .radio-inline:active,
+.is-focused .radio-inline:hover,
+.checkbox label:focus,
+.checkbox label:active,
+.checkbox label:hover,
+.is-focused .checkbox label:focus,
+.is-focused .checkbox label:active,
+.is-focused .checkbox label:hover,
+.checkbox-inline:focus,
+.checkbox-inline:active,
+.checkbox-inline:hover,
+.is-focused .checkbox-inline:focus,
+.is-focused .checkbox-inline:active,
+.is-focused .checkbox-inline:hover,
+.switch label:focus,
+.switch label:active,
+.switch label:hover,
+.is-focused .switch label:focus,
+.is-focused .switch label:active,
+.is-focused .switch label:hover {
+    color: rgba(0, 0, 0, 0.9);
+}
+/* Selections
+ ----------------------------------------------------------------------- */
+/*
+.bmd-form-group label,
+.bmd-form-group .checkbox label,
+.bmd-form-group .radio label,
+.bmd-form-group .slider label {
+  font-size: 0.95rem;
+  color: rgba(250, 250, 250, 0.6);
+}
+.is-focused .radio label,
+.is-focused .radio-inline,
+.is-focused .checkbox label,
+.is-focused .checkbox-inline,
+.is-focused .switch label {
+    color: rgba(0, 0, 0, 0.7);
+}
+*/
+/* .bmd-form-group .slider label  */
+/*
+ .radio label, label.radio-inline {
+   padding-left: 2.4375rem;
+}
+*/
+.noUi-slider label {
+  position: relative;
+  padding-left: .5rem;;
+}
+/* Comments
+ ----------------------------------------------------------------------- */
+.comment .pull-left {
+  float: left;
+}
+.comment .avatar {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 15px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+.comment .avatar img {
+  width: 100%;
+}
+.comment .comment-heading {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+.comment .comment-heading small {
+  font-size: 0.9rem;
+}
+.comment .comment-body {
+  padding-right: 10px;
+  background: #f8f8f8;
+}
+.comment .comment-footer {
+  padding-right: 10px;
+}
+.comment .comment-footer .btn {
+  margin-bottom: 20px;
+}
+.comment .comment-footer:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.comment p {
+  color: #999999;
+  font-size: 16px;
+  line-height: 1.6em;
+  padding: 0px 20px 10px 110px;
+}
+.comment-left,
+.comment > .pull-left {
+  padding: 15px 10px 10px 20px;
+}
+
+

@@ -1,0 +1,405 @@
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/core3/css/modules/j1_bootsnav_template.css
+ #  Provides Bootsnav CSS skin styles for J1 Template
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #
+ # -----------------------------------------------------------------------------
+ #  NOTE:
+ #  Media query breakpoints are optimized to midsize window
+ #  size (max 1024px) best viewed on Desktop and Tablet. Below
+ #  a viewport size of 1024px, the (top) menu bar will be collapsed.
+ #
+ # -----------------------------------------------------------------------------
+ # CSS examples
+ #
+ #    CSS selectors
+ #    nav[class ^="navbar navbar-default bootsnav"] { ... }
+ #    div[class*=" tocolor-"] { ... }
+ #nav.navbar.bootsnav
+ # -----------------------------------------------------------------------------
+ #  CSS file generated: {{site.time}}
+ # -----------------------------------------------------------------------------
+*/
+
+/*
+ ---------------------------------------------------------------------
+    NOTE: Several styles are moved to j1_adapter_bootsnav.js !!!
+  --------------------------------------------------------------------
+*/
+
+/* Global style settings
+ ------------------------------------------------------------------ */
+
+/* Top Search
+ ------------------------------------------------------------- */
+
+ /* moved to j1_adapter_bootsnav.js
+.top-search {
+  background-color: {{search_background_color}};
+}
+*/
+
+.top-search .input-group-addon {
+  background-color: transparent;
+}
+
+.top-search .input.form-control {
+  background-color: transparent;
+  height: 61px;
+}
+
+/* QuickLink Navigation
+ ------------------------------------------------------------- */
+
+/* jadams: changed because of div|header,
+            org: margin-right: -15px;
+ */
+.attr-nav {
+  float: right;
+  /* display: inline-block; */
+  margin-left: 13px;
+  margin-right: 25px;
+}
+
+/* jadams: place icons */
+.attr-nav> ul> li> a {
+  display: block;
+  padding: 10px 5px;
+  position: relative;
+}
+
+/* moved to j1_adapter_bootsnav.js
+.attr-nav> ul> li> a:hover {
+  color: {{menu_item_color_hover}} !important;
+}
+*/
+
+/* Side Menu
+ ------------------------------------------------------------- */
+
+.side {
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  right: -280px;
+  width: 280px;
+  padding: 25px 30px;
+  height: 100%;
+  display: block;
+  /* moved to j1_adapter_bootsnav.js */
+  /* background-color: {{sidebar_background_color}}; */
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 9;
+}
+
+/* jadams 2016-09-12: Heading Sidebar */
+.side .widget .heading {
+  text-align: left;
+  color: #eee;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+/* Navbar
+ ------------------------------------------------------------- */
+
+/* Dropdown styles
+ --------------------------------------------------- */
+
+li.dropdown {
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu {
+  margin: 0;
+}
+
+/* jadams: Disable background color toggle for MD */
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  background-color: transparent !important;
+}
+
+/* Bottom line for the Navbar size|color
+ --------------------------------------------------- */
+
+nav.navbar.bootsnav {
+  box-shadow: 0 0 10px 0 #212121;
+}
+
+/* Size of Brand Image
+ --------------------------------------------------- */
+/* moved to j1_adapter_bootsnav.js
+.navbar-brand > img {
+  height: {{brand_image_height}}px !important;
+}
+*/
+
+/* Color settings moved to j1_adapter_bootsnav.js
+ ------------------------------------------------------------- */
+
+/* INACTIVE menue item color */
+/*
+nav.navbar.bootsnav.no-background.white .attr-nav> ul> li> a,
+nav.navbar.bootsnav.navbar-transparent.white .attr-nav> ul> li> a,
+nav.navbar.bootsnav.navbar-transparent.white ul.nav> li> a,
+nav.navbar.bootsnav.no-background.white ul.nav> li> a {
+    color: {{inactive_menu_item_color}};
+}
+*/
+
+/* Focused MENU item (hover) moved to j1_adapter_bootsnav.js
+nav.navbar.navbar-transparent ul.nav > li > a:hover,
+nav.navbar.no-background ul.nav > li > a:hover,
+nav.navbar ul.nav li.scroll.active > a,
+nav.navbar.navbar-dark ul.nav li.dropdown ul.dropdown-menu  > li > a:hover,
+nav.navbar ul.nav li.dropdown.on > a,
+nav.navbar-dark ul.nav li.dropdown.on > a {
+  color: {{menu_item_color_hover}} !important;
+}
+*/
+
+/* moved to j1_adapter_bootsnav.js
+.dropdown-menu > .active > a {
+  background-color: {{dropdown_background_color_active}} !important;
+}
+*/
+
+/* moved to j1_adapter_bootsnav.js
+{% if dropdown_item_style == 'raised' %}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu> li> a {
+  padding: {{dropdown_padding_v}}px {{dropdown_padding_h}}px;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+{% else %}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu> li> a {
+  padding: {{dropdown_padding_v}}px {{dropdown_padding_h}}px;
+}
+{% endif %}
+*/
+
+/* jadams, 2017-10-18: Workaround for QuickMenue
+ ------------------------------------------------------------- */
+@media (max-width: 1040px) {
+
+  /*  For unknown reason, the line breaks for QuickLinks
+   -------------------------------------------------------- */
+   nav.navbar.bootsnav .attr-nav {
+    display: none !important;
+   }
+}
+
+/* Large Window|Desktop (>= 1024)
+ ------------------------------------------------------------- */
+
+@media (min-width: 1024px) {
+
+  /*  Navbar
+   -------------------------------------------------------- */
+  /* moved to j1_adapter_bootsnav.js
+  nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a:hover {
+    background: {{dropdown_background_color_hover}} !important;
+  }
+  */
+
+  /* moved to j1_adapter_bootsnav.js
+  .navbar-default .navbar-nav > li > a {
+      color: {{menu_item_color}} !important;
+  }
+  */
+
+  /* moved to j1_adapter_bootsnav.js
+  .navbar-default .navbar-nav > li > a:hover {
+      color: {{menu_item_color_hover}} !important;
+  }
+  */
+
+  /*  Dropdown menu
+   --------------------------------------------------- */
+
+  /* top margin */
+  nav.navbar.bootsnav ul.nav .dropdown-menu .dropdown-menu {
+    margin-top: -2px;
+  }
+
+  /* submenu indicator, size */
+  nav.navbar.bootsnav li.dropdown ul.dropdown-menu li.dropdown > a.dropdown-toggle:before {
+      font-weight: 600;
+      font-size: 1.2em;
+  }
+
+  /*  Navbar right
+   --------------------------------------------------- */
+  /* moved to j1_adapter_bootsnav.js
+  nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu {
+    left: -{{ dropdown_width }}px;
+  }
+  */
+
+  /*  Navbar transparent-light (white)
+      Styles placed dymically via j1_adapter_bootsnav.js
+   --------------------------------------------------- */
+  /* moved to j1_adapter_bootsnav.js
+  nav.navbar.bootsnav.navbar-transparent.white {
+    background-color: {{navbar_background_color_full}};
+    border-bottom: solid 0px !important;
+  }
+  */
+  /* moved to j1_adapter_bootsnav.js
+  nav.navbar.bootsnav.navbar-scrolled.white {
+    background-color: {{navbar_background_color_scrolled}};
+  }
+  */
+
+  /* jadams: width of a menue item: width: {{dropdown_width}}px; */
+  /* jadams: border-top: solid {{dropdown_border_height}}px */
+  /* jadams: added animation-duration */
+  /* moved to j1_adapter_bootsnav.js
+  nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
+    animation-duration: {{animate_duration}}s !important;
+    color:  {{dropdown_border_color}};
+    width: {{dropdown_width}}px;
+    border-top: solid {{dropdown_border_height}}px;
+  }
+  */
+
+  /* Position for Brand Image
+   --------------------------------------------------- */
+  .navbar-brand {
+    padding: 10px 15px !important;
+  }
+
+  /* Dropdown styles
+   --------------------------------------------------- */
+  /* moved to j1_adapter_bootsnav.js
+  {% if dropdown_style == 'raised' %}
+  nav.navbar.bootsnav li.dropdown ul.dropdown-menu  {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+  {% endif %}
+  */
+
+  /* moved to j1_adapter_bootsnav.js
+  nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li > a {
+    color: {{dropdown_item_color}};
+    font-size: {{dropdown_font_size}};
+    font-weight: 400;
+  }
+  */
+
+  /* moved to j1_adapter_bootsnav.js
+  nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a {
+    color: {{dropdown_item_color}};
+    font-size: {{megamenu_font_size}};
+    font-weight: 400;
+  }
+  */
+
+}
+
+/* Small Window|Desktop (<= 1023)
+ ------------------------------------------------------------- */
+@media (max-width: 1023px) {
+
+  /*  QuickLinks
+   -------------------------------------------------------- */
+   /*
+  attr-nav {
+    display: none;
+  }
+  */
+  /*  Navbar
+   -------------------------------------------------------- */
+
+  nav.navbar.bootsnav .navbar-nav > li > a {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  /* jadams: increase size of font icon */
+  nav.navbar.bootsnav li.dropdown a.dropdown-toggle:before {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu > li > a {
+    color: #FAFAFA !important;
+  }
+
+  /* jadams: no highlight on hover */
+  nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu > li > a:hover {
+    color: transparent;
+  }
+
+  .navbar-default .navbar-nav > li> a {
+    color: #FAFAFA !important;
+  }
+
+  /* jadams: no highlight on hover */
+  .navbar-default .navbar-nav > li > a:hover {
+    color: transparent;
+  }
+
+  /*  Navbar transparent-light (white)
+   --------------------------------------------------- */
+  /* moved to j1_adapter_bootsnav.js
+  nav.navbar.bootsnav.navbar-transparent.white {
+    background-color: {{navbar_background_color_collapsed}};
+    border-bottom: 0;
+  }
+  */
+
+  /* moved to j1_adapter_bootsnav.js
+  nav.navbar.bootsnav {
+    background-color: {{navbar_background_color_collapsed}};
+  }
+  */
+}
+
+/* Mobile
+ ----------------------------------------------------------------------- */
+@media (min-width: 320px) and (max-width: 740px) {
+
+  /* jadams */
+  .navbar-brand {
+    float: left;
+    padding: 5px;
+    padding-left: 100px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .attr-nav {
+    margin-right: -15px;
+  }
+
+  .attr-nav > ul > li > a {
+      color: #E91E63;
+  }
+
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    color: white !important;
+}
+
+  nav.bootsnav.navbar-full ul.nav{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+}

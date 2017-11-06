@@ -1,0 +1,13 @@
+
+
+{
+  "themes":
+  [
+    {"name": "j1 default",      "cssCdn": "/assets/themes/j1/framework/bootstrap/j1/light/css/bootstrap.min.css"},
+    {"name": "j1 light",        "cssCdn": "/assets/themes/j1/framework/bootstrap/j1/light/css/bootstrap.min.css"},
+    {"name": "j1 dark",         "cssCdn": "/assets/themes/j1/framework/bootstrap/j1/dark/css/bootstrap.min.css"},
+    {"name": "bootstrap 3.3.7", "cssCdn": "/assets/themes/j1/framework/bootstrap/bs3/css/bootstrap.min.css"}
+  ]
+}
+
+

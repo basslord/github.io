@@ -1,0 +1,85 @@
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/core3/css/modules/j1_tocbot.css
+ #  Provides base styles for the toc navigation based on 
+ #  Tim Scanlin's Tocbot
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #  https://tscanlin.github.io/tocbot
+ #
+ #  Copyright (C) 2016 Tim Scanlin
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #  Tocbot: Licensed under Open Source Iniative MIT.
+ #  For details, see http://opensource.org/licenses/MIT
+ #
+ # -----------------------------------------------------------------------------
+*/
+
+/*
+ ---------------------------------------------------------------------
+    NOTE: Several styles are moved to j1_adapter_tocbot.js
+          for dynamic processiing !!!
+  --------------------------------------------------------------------
+*/
+
+.toc {
+  overflow-y: auto;
+}
+
+/* jadams 2016-10-02: added list-style, list-style-type - set to none */
+.toc  ul {
+  overflow: hidden;
+  position: relative;
+  list-style: none;
+  list-style-type: none !important;
+}
+
+.toc-list {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.toc-link::before {
+  background-color: #EEE;
+  content: ' ';
+  display: inline-block;
+  height: inherit;
+  left: 0;
+  margin-top: -1px;
+  position: absolute;
+  width: 2px;
+}
+
+a.toc-link {
+  color: currentColor;
+  height: 100%;
+  font-size: 14px;
+  text-decoration: none !important;
+}
+
+.is-collapsible {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+.is-collapsed {
+  max-height: 0;
+}
+
+.is-position-fixed {
+  position: fixed !important;
+  top: 0;
+}
+
+/* Moved to j1_adapter_tocbot.js */
+/*
+.is-active-link {
+  font-weight: 700;
+}
+*/
+

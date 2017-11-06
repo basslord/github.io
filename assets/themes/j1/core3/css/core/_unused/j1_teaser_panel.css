@@ -1,0 +1,57 @@
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/core3/css/panels/j1_teaser-panel.css
+ #  Provides styles for the J1 Teaser Panel
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #
+ # -----------------------------------------------------------------------------
+*/
+
+/* Content
+ ------------------------------------------------------------------ */
+
+.teaser-panel {
+  padding: 20px 0 20px;
+  border-bottom: solid 1px #eee;
+  background: linear-gradient(0deg, #C5CAE9 0%, #fff 100%);
+}
+
+.teaser-panel p {
+	margin-bottom: 0;
+  text-align: justify;
+}
+
+.teaser-panel h3 {
+	margin-bottom: 0.75rem;
+}
+
+
+/* Buttons
+ ------------------------------------------------------------------ */
+
+.btn-row {
+	text-align: initial;
+}
+
+
+/* Media Queries
+ ------------------------------------------------------------------ */
+
+@media (max-width: 768px) {
+	.btn-row {
+		text-align: center;
+	}
+}
+
+@media (max-width: 640px) {
+	.btn-row {
+		text-align: center;
+	}
+}

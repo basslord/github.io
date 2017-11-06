@@ -1,0 +1,38 @@
+{% comment%}
+---
+regenerate:                         false
+---
+{% endcomment%}
+
+{% capture j1_cache %}
+
+{% comment%}
+
+    The liquid template themes.json is used by the J1 Theme Manager to locate
+    the  CSS file to be loaded to switch for a specific theme
+
+  NOTE:
+    Be carefull change the Liquid code. If the code is changed, check the
+    interity of the JSON data created. Corrupted or invalid JSON data will
+    make the Javascript portion of J1ThemeMgr to fail and no valid CSS will
+    be available to provide the needed styles to properly render the pages.
+
+{% endcomment%}
+
+  {% assign  asset_path  = site.data.j1_config.asset_path %}
+  {% capture theme_path %}{{asset_path}}/bs_theme_switcher/themes{% endcapture %}
+
+{
+  "themes":
+  [
+    {"name": "default",             "cssCdn": "{{asset_path}}/bootstrap/css/bootstrap.min.css"},
+    {"name": "bootstrap 3.3.7",     "cssCdn": "{{asset_path}}/bootstrap/default/css/bootstrap.min.css"},
+    {"name": "j1 light default",    "cssCdn": "{{theme_path}}/j1/light/default/bootstrap.min.css"},
+    {"name": "j1 dark default",     "cssCdn": "{{theme_path}}/j1/dark/default/bootstrap.min.css"}
+  ]
+}
+
+{% endcapture %}
+
+{{ j1_cache | strip_empty_lines }}
+{% assign j1_cache = nil %}

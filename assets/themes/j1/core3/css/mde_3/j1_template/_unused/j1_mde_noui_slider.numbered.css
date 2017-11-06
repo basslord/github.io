@@ -1,0 +1,155 @@
+
+
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/modules/bmd4/css/j1_template/j1_bmd_noui_slider.css
+ #  Provides MD styles for J1 Template (noUI Slider)
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #
+ # -----------------------------------------------------------------------------
+ #  CSS file generated: 2017-11-06 21:16:02 +0100
+ # -----------------------------------------------------------------------------
+*/
+.noUi-target,
+.noUi-target * {
+  -webkit-touch-callout: none;
+  -ms-touch-action: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* jadams, 2017-05-22, limit the slider to 80% for the right */
+.noUi-base {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  background: #FCE4EC;
+}
+.noUi-connect {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #F06292;
+}
+.noUi-origin {
+  position: absolute;
+  height: 2px;
+  top: 0;
+  left: 0;
+  margin: 0;
+  bottom: 0;
+  border-radius: 0;
+}
+.noUi-stacking .noUi-handle {
+  z-index: 10;
+}
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: left 0.3s, top 0.3s;
+       -o-transition: left 0.3s, top 0.3s;
+          transition: left 0.3s, top 0.3s;
+}
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+.noUi-horizontal {
+  height: 2px;
+}
+/* jadams 2017-05-22, limit the handle on the left */
+.noUi-horizontal .noUi-handle {
+  left: -5px;
+}
+/* jadams 2017-05-22, style of the handle */
+.noUi-base .noUi-handle {
+  background-color: #E91E63;
+  border: none;
+  border-radius: 6px;
+  box-shadow: none;
+  color: #FFFFFF;
+  display: table;
+  height: 30px;
+  width: 40px;
+  margin-top: -15px;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;      
+  -webkit-transition: all 0.2s ease-out;
+       -o-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-transition: left 0.2s ease-in, background-color 0.2s ease-in, -webkit-transform 0.3s ease;
+          transition: left 0.2s ease-in, background-color 0.2s ease-in, -webkit-transform 0.3s ease;
+       -o-transition: left 0.2s ease-in, background-color 0.2s ease-in, transform 0.3s ease, -o-transform 0.3s ease;  
+}
+.noUi-base .noUi-handle::before {
+  background: transparent;
+  content: attr(data-value);
+  display: table-cell;
+  font-size: 1rem;
+  font-weight: 100;
+  position: static;
+  width: 100%;
+  vertical-align: middle;
+}
+.noUi-base .noUi-handle::after {
+  display: none;
+}
+.noUi-horizontal.noUi-extended {
+	padding-right: 32px;
+}
+.noUi-horizontal.noUi-extended .noUi-handle {
+	left: -1px;
+}
+.noUi-horizontal.noUi-extended .noUi-origin  {
+	right: -2px;
+}
+.noUi-background {
+  height: 2px;
+  margin: 20px 0;
+}
+.noUi-origin[style^="left: 0"] .noUi-handle {
+  background-color: #F06292;
+  border: 2px solid #c8c8c8;
+}
+.noUi-origin[style^="left: 0"] .noUi-handle.noUi-active {
+  border-width: 1px;
+}
+.noUi-origin[style^="left: 100"] .noUi-handle {
+  background-color: #880E4F;
+  border: 2px solid #c8c8c8;
+}
+.noUi-origin[style^="left: 100"] .noUi-handle.noUi-active {
+  border-width: 1px;
+}
+.noUi-target {
+  border-radius: 2px;
+}
+.noUi-horizontal {
+  height: 2px;
+  margin: 15px 0;
+}
+.noUi-base .noUi-handle:hover {
+  background-color: #F06292;
+}
+.noUi-base .noUi-handle.noUi-active {
+  background-color: #E91E63;
+  z-index: 3;
+}
+

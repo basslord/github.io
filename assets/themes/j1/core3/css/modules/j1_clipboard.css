@@ -1,0 +1,87 @@
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/core3/css/modules/j1_clipboard.css
+ #  Provides styles for the J1 Clipboard
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #
+ # -----------------------------------------------------------------------------
+*/
+
+/* J1 Tooltip
+ ----------------------------------------------------------------------- */
+
+.tooltip-inner {
+  background-color: #E91E63;
+  border-radius: 0.125rem;
+}
+
+.tooltip.in {
+  opacity: 1.0;
+}
+
+.tooltip.tooltip-top .tooltip-arrow, 
+.tooltip.bs-tether-element-attached-bottom .tooltip-arrow {
+  border-top-color: #E91E63;
+}
+
+/* customize the tooltip for class  "j1-tooltip" (BS only)
+ ------------------------------------------------------------- */
+ 
+.j1-tooltip + .tooltip > .tooltip-inner {
+  background-color: #f00;
+}
+.j1-tooltip + .tooltip > .tooltip-arrow {
+  background-color: #f00;
+}
+
+.btn-clipboard + .tooltip > .tooltip-inner {
+  background-color: #f00;
+}
+.btn-clipboard + .tooltip > .tooltip-inner {
+  background-color: #f00;
+}
+
+
+/* J1 Clipboard
+ ----------------------------------------------------------------------- */
+
+.j1-clipboard {
+  position: relative;
+  display: block;
+  float: right;
+}
+
+.btn-clipboard {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  z-index: 10;
+  display: block;
+  padding: .25rem .5rem;
+  font-size: 75%;
+  color: #818a91;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: .25rem;
+}
+
+.btn-clipboard:hover {
+  color: #fff;
+  background-color: #027de7;
+}
+
+/* Mobile
+ ----------------------------------------------------------------------- */
+@media (min-width: 320px) and (max-width: 767px) {
+  .j1-clipboard {
+    display: none;
+  }
+}   

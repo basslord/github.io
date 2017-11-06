@@ -1,0 +1,54 @@
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/modules/justified_gallery/css/theme/j1_template.css
+ #  Provides styles for J1 JustifiedGallery
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #
+ # -----------------------------------------------------------------------------
+*/
+
+/*
+ ---------------------------------------
+	  JG Gallery Block
+ ---------------------------------------
+*/
+
+.j1-jg-galleryblock  > .title {
+  text-rendering: optimizeLegibility;
+  text-align: left;
+  font-size: 1.7rem;
+  font-style: italic;
+  line-height: 1.45;
+  color: #888A85;
+  font-weight: 400;
+  margin-top: 1.25em;
+  margin-bottom: .50em;
+}
+
+/* NO gutter for the row the gallery is placed */
+.j1-jg-gutter.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.j1-jg-gutter > [class^="col-"], .j1-jg-gutter > [class^=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* 2px gutter */
+.j1-jg-gutter-2.row {
+  margin-right: -1px;
+  margin-left: -1px;
+}
+.j1-jg-gutter-2 > [class^="col-"], .j1-jg-gutter-2 > [class^=" col-"] {
+  padding-right: 1px;
+  padding-left: 1px;
+}

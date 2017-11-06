@@ -1,0 +1,127 @@
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/core3/css/core/j1_header.css
+ #  Provides base styles for headers used for J1 Template
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #
+*/
+
+/* Master Header (masthead) at the top of all pages
+ ----------------------------------------------------------------------- */
+
+.j1-masthead {
+  position: relative;
+  width: 100%;
+}
+
+.j1-masthead .j1-booticon {
+  margin: 0 auto 30px;
+}
+
+.j1-masthead .head-title h2 {
+  margin-top: 0;
+  margin-bottom: .1em;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.j1-masthead .head-tagline h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1;
+  font-style: italic;
+}
+
+.j1-masthead .lead {
+  margin: 0 20px 30px;
+  font-size: 20px;
+  color: #babdb6;
+}
+
+.j1-masthead .version {
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e3436;
+}
+
+.j1-masthead .btn {
+  width: 100%;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.j1-masthead-caption {
+  display: none;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.j1-masthead-caption-anchor a {
+    color: #3F51B5 !important;
+    text-decoration: none;
+}
+
+.j1-masthead-caption-anchor a:hover {
+    border-bottom: 1px dotted #ebf1f5;
+    color: #3F51B5 !important;
+    text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .j1-masthead .lead {
+    width: 90%;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .j1-masthead h1 {
+    font-size: 60px;
+  }
+  .j1-masthead .lead {
+    width: 95%;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 480px) {
+  .j1-masthead .btn {
+    width: auto;
+    margin-top: 10px;
+  }
+}
+
+/* Helper styles
+ ----------------------------------------------------------------------- */
+
+.text-emphasis-none {
+  text-shadow: none !important;
+}
+
+.text-emphasis-strong {
+  text-shadow: 0 2px 0 rgba(0,0,0,.4) !important;
+}
+
+.text-emphasis-stronger {
+  text-shadow: 0 3px 0 rgba(0,0,0,.3) !important;
+}
+
+.text-emphasis-strongest {
+  text-shadow: 0 4px 0 rgba(0,0,0,.2) !important;
+}

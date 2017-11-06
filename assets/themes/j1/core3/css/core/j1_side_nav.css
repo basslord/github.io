@@ -1,0 +1,117 @@
+/*
+ # -----------------------------------------------------------------------------
+ #  J1: ~/assets/themes/j1/core3/css/core/j1_side_nav.css
+ #  Provides styles for the J1 Sidebar (Bootstrap)
+ #
+ #  Product/Info:
+ #  https://jekyll.one
+ #
+ #  Copyright (C) 2017 Juergen Adams
+ #
+ #  J1 Template is licensed under the MIT License.
+ #  For details, see https://jekyll.one
+ #
+ # -----------------------------------------------------------------------------
+*/
+
+.j1-sidenav li {
+	padding: 0;
+}
+
+.j1-sidenav li a {
+	display: block;
+	padding: 8px 30px 8px 10px;
+}
+
+.j1-sidenav li a:hover {
+	text-decoration: none;
+}
+
+.j1-sidenav > li.active,
+.j1-sidenav > li.active:hover {
+	background: #717984;
+}
+
+.j1-sidenav > li.active,
+.j1-sidenav > li.active:hover,
+.j1-sidenav > li.active:focus {
+	border-color: #ddd;
+}
+
+.j1-sidenav > li.active > a {
+	color: #fff;
+}
+
+/*Sidebar Sub Navigation*/
+.j1-sidenav li ul {
+	padding: 0;
+	list-style: none;
+}
+
+.j1-sidenav li ul,
+.j1-sidenav li.active ul a {
+	background: #f8f8f8;
+}
+
+.j1-sidenav li ul a {
+	color: #555;
+	font-size: 12px;
+	border-top: solid 1px #ddd;
+	padding: 6px 30px 6px 17px;
+}
+
+.j1-sidenav ul li:hover a,
+.j1-sidenav ul li.active a {
+	color: #72c02c;
+}
+
+/*Sidebar Badges*/
+.list-group-item li > .badge {
+	float: right;
+}
+
+.j1-sidenav span.badge {
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+.j1-sidenav .list-toggle > span.badge {
+	margin-right: 25px;
+}
+
+.j1-sidenav ul li span.badge {
+	margin-top: 8px;
+	font-size: 11px;
+	padding: 3px 5px;
+	margin-right: 10px;
+}
+
+/* Sidebar List Toggle
+------------------------------------*/
+.list-group-item:first-child,
+.list-group-item:last-child {
+	border-radius: 0;
+}
+
+.list-toggle:after {
+	top: 7px;
+	right: 10px;
+	color: #777;
+	font-size: 14px;
+	content: "\f105";
+	position: absolute;
+	font-weight: normal;
+	display: inline-block;
+	font-family: FontAwesome;
+}
+
+.list-toggle.active:after {
+	color: #fff;
+	content: "\f107";
+}
+
+
+{% endcapture %}
+
+{{ j1_cache | strip_empty_lines }}
+{% assign j1_cache = nil %}
